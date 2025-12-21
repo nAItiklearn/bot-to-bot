@@ -690,10 +690,9 @@
 #     else:
 #             print(i)
 
-#NUMPY
+##NUMPY(FROM "BRO CODE CHANNEL" BTW)
 
 # import numpy as np
-
 # ar = np.array([
 #     [['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']],
 #     [['J', 'K', 'L'], ['M', 'N', 'O'], ['P', 'Q', 'R']],
@@ -702,7 +701,6 @@
 # print(ar[::-1])
 
 # # SLICING
-
 # import numpy as np
 # ar = np.array([[1,2,3,4],
 #               [5,6,7,8],
@@ -717,9 +715,42 @@
 # print(quadrant)
 
 ##scaler arithamatic
-        
-        
 
-
+# import numpy as np
+# ar = np.array([1,2,3,4]) 
+# print(ar +1)
+# print(ar*3)
+# print(ar-1)       
+# print(ar/2)
+# print(ar  **2)
         
+##vectorized mathn functions
+# import numpy as np 
+# ar = np.array([4,8,16,144])
+# ar2= np.array([1.4,4.1,6.5, 9.9])
+# print(np.sort(ar))
+# print(np.square(ar))
+# print(np.sqrt(ar))
+# print(np.squeeze(ar))
+# print(np.round(ar2))
+# print(np.ceil(ar2))
+# print(np.floor(ar2))
+        
+##element wise arithematic 
+# import numpy as np
+# ar1 =np.array([1,2,3,4,5])
+# ar2 =np.array([6,7,8,9,10])
+# print(ar1 + ar2)
+# print(ar1 * ar2)
+# print(ar1 -ar2)       
+# print(ar1 /ar2)
+# print(ar1**ar2)
+
+##COMPARISON OPERATORS
+# import numpy as np
+# marks =np.array([60,72,80,99,100,50])
+# print(marks==100)
+# print(marks>=60)
+# marks[marks<70] = 0
+# print(marks)
 
