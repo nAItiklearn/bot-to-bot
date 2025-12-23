@@ -22,6 +22,9 @@ The code covers pretty much all the Python basics:
 - **OOP Basics** - classes, objects, inheritance
 - **Mini Projects** - small fun projects like number guessing game, password generator
 
+## NOW IM LEARNING ABOUT LIBRARIES  OF PYTHON SO ILL UPDATE IT EVERYTIME I DO ONE
+- **added python** - slicing ,arithmetic ,broadcasting, aggregate functions, filtering 
+
 ## My Thoughts on the Course
 
 Honestly, if you don't know anything about Python, Apna College's course is pretty solid. It's in Hindi/English mix which makes it easier to understand, and they explain things in a simple way. Perfect for absolute beginners like I was.
@@ -36,4 +39,4 @@ Feel free to use this if you're learning Python too! We all start somewhere 😄
 
 ---
 
-*Learning never stops!*
+*keep slaying gng*
