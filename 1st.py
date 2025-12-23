@@ -754,3 +754,41 @@
 # marks[marks<70] = 0
 # print(marks)
 
+##BRODCASTING 
+#-allows to perform operations on arrays,
+# with diff shapes by virtually expanding dimensions 
+# so that they match the larger array shape.
+
+# import numpy as np
+# ar1 =np.array([1, 2 ,3 ,4 ])
+# ar2 =np.array([[1],[2],[3],[4]])
+# print(ar1 * ar2)
+##CONDITION - 
+ #Either dimension have same size or
+ #one of the dim. has a size of 1.
+ ##(DIFFERENT FROM ELEMENT WISE ARITHAMTIC) 
+ 
+ #AGGREGATE FUNCTIONS= SUMMARIZE DATA
+ # AND RETURN SINGLE VALUE
+# import numpy as np
+# arr = ([[1,2,3,4,5],
+#        [6,7,8,9,10 ]])
+# print(np.sum(arr))
+# print(np.mean(arr))
+# print(np.average(arr))
+# print(np.min(arr))
+# print(np.argmin(arr))index of min value
+# print(np.argmax(arr))index of max value
+# print(np.sum(arr ,axis =0))
+
+##FILTERING
+import numpy as np 
+age = np.array([16,15,14,17,19,21,22,22,43,65,45,67])
+# teen =age[age<=18]
+# adult =age[(age>18) & (age<=60)]
+# old = age[age>60]
+# print(teen)
+# print(adult)
+# print(old)
+# adults = np.where(age>=18,age ,np.nan)
+# print(adults)
