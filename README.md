@@ -23,7 +23,15 @@ The code covers pretty much all the Python basics:
 - **Mini Projects** - small fun projects like number guessing game, password generator
 
 ## NOW IM LEARNING ABOUT LIBRARIES  OF PYTHON SO ILL UPDATE IT EVERYTIME I DO ONE
-- **added python** - slicing ,arithmetic ,broadcasting, aggregate functions, filtering 
+- **added Numpy** - slicing ,arithmetic ,broadcasting, aggregate functions, filtering 
+-**added Pandas** -
+Series 1️⃣
+DataFrames 🔢
+Importing 📥
+Selection 🎯
+Filtering 🔍
+Aggregation ➕
+Data cleaning 🧹
 
 ## My Thoughts on the Course
 

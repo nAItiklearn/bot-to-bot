@@ -782,8 +782,8 @@
 # print(np.sum(arr ,axis =0))
 
 ##FILTERING
-import numpy as np 
-age = np.array([16,15,14,17,19,21,22,22,43,65,45,67])
+# import numpy as np 
+# age = np.array([16,15,14,17,19,21,22,22,43,65,45,67])
 # teen =age[age<=18]
 # adult =age[(age>18) & (age<=60)]
 # old = age[age>60]
@@ -792,3 +792,130 @@ age = np.array([16,15,14,17,19,21,22,22,43,65,45,67])
 # print(old)
 # adults = np.where(age>=18,age ,np.nan)
 # print(adults)
+
+##PANDAS 
+# Pandas is a Python library designed for data manipulation, analysis, and cleaning. It provides high-performance,
+# easy-to-use data structures and data analysis tools built on top of NumPy.
+
+# CORE DATA STRUCTURES IN PANDAS:
+# Series: A 1-dimensional labeled array capable of holding any data type.
+# DataFrame: A 2-dimensional labeled data structure with columns of potentially different types (think of a table or spreadsheet).
+# Index: Labels for rows/columns that enable alignment and efficient lookup.
+
+#SERIES- a pandas 1D labeled array that array can hold any data types 
+#-A single coloumn in a spreadsheet(1D)
+
+# import pandas as pd
+# data = ["sam altman", "elon musk" , "chatgpt", "grok"]
+# series = pd.Series(data , index=["owner1" , "owner2", "model1", "model2"])      ## a construster , not a function.
+# print(series)
+# print(series.loc["owner2"])
+# series.loc["model1"]= "codered"          #MUTABLE
+# print(series)
+# print(series[series== "sam altman" ])
+
+# import pandas as pd 
+# cal ={"Day 1 ": 1500 , "Day 2 ": 2000, "day 3": 2600} 
+# series = pd.Series(cal)
+# print(series)
+# print(series.loc["Day 2 "])
+# series.loc["Day 1 "] += 200
+# print(series.loc["Day 1 "])
+
+##DATAFRAMES
+#- A tabular data structure with rows and coloumn(2D)
+     # similar to an excell spreadsheet
+
+# import pandas as pd 
+# data  ={
+#     "marvel character": ["doctor strange", "iron man"],
+#     "quality":["time cntrol", "brain"]
+# }
+# df =pd.DataFrame(data , index=["marvel1", "marvel2"])
+# # print(df.iloc[0])
+# # df["wife"]= ["💔 ","pepper potts"]
+# newdata= {
+#     "marvel character" : ["spiderman"],
+#     "quality":["u already know "]
+# }
+# ndf = pd.DataFrame(newdata , index=["marvel3"])
+# df = pd.concat([df, ndf])
+# print(df)
+
+##IMPORTING 
+# from operator import index
+# import pandas as pd
+# df = pd.read_csv("pokemon.csv" , index_col ="Name")
+# print(df.to_string())
+##selection by coloums
+# print(df["Height"].to_string())
+##selection by rows
+# print(df.loc["Bulbasaur": "Pikachu" , ["Height", "Weight"]])
+# print(df.iloc[0:11:3 ,0:4])
+# pokemon = input(" pokename")
+
+# try:
+#      print(df.loc[pokemon])
+# except KeyError:
+#     print(pokemon, "not found")
+
+##FILTERING - keeping rows that sarisfy a condition
+
+# import pandas as pd
+# df = pd.read_csv("pokemon.csv") 
+# tall_pok = df[df["Height"]>1.5]
+# fire_pok = df[(df["Type1"]=="Fire") |
+#               (df["Type2"]=="Fire")]
+# print(fire_pok.to_string())
+# ff_pok = df[(df["Type1"] == "Fire") & (df["Type2"] == "Flying") |
+#             (df["Type1"] == "Flying") & (df["Type2"] == "Fire")]
+# print(ff_pok)
+
+##AGGREGATE FUNCTION 
+#              a set of values to a single summary value 
+#              used to analyze data , used with groupby()function
+
+# import pandas as pd
+# #for whole dataset
+# df = pd.read_csv("pokemon.csv")
+# print(df.sum(numeric_only=True))
+# print(df.mean(numeric_only=True))
+# print(df.median(numeric_only=True))
+# print(df.mode(numeric_only=True))
+# print(df.count())
+# print(df.max(numeric_only=True))
+
+#single coloumn
+# print(df["Height"].sum())
+# print(df["Weight"].mean())
+
+# grp = df.groupby("Type1")
+# print(grp["Height"].count())        #groupby is a object
+
+##DATA CLEANING- process of fixing/removing incorrect,irrelevant data.
+#75%of work done with pandas is data cleaning
+# import pandas as pd
+# df = pd.read_csv("pokemon.csv")
+# print(df.drop(columns=["No"]))
+
+#handle missing data
+# df=df.dropna(subset=["Type2"])
+# print(df.to_string())
+# df=df.fillna({"Type2":"None"})
+# print(df.to_string())
+
+#3. fix inconsistent data
+# df["Type1"]=df["Type1"].replace({"Fire" :"FIRE", "Water":"WATER", "Grass":"GRASS"})
+# print(df["Type1"].to_string())
+
+#4.standardize data
+# df["Name"]=df["Name"].str.upper()
+# print(df["Name"].to_string())
+
+#5.fix data types
+# df["Legendary"]=df["Legendary"].astype(bool)
+# print(df["Legendary"].to_string())
+
+#6.remove dupliccates
+# df = df.drop_duplicates()
+# print(df.to_string())
