@@ -919,3 +919,182 @@
 #6.remove dupliccates
 # df = df.drop_duplicates()
 # print(df.to_string())
+
+##MATPLOTLIB
+# import matplotlib.pyplot as plt
+# import numpy as np
+# plt.plot([1,2,3,4],[10,15,20,25])
+# plt.xscale('linear')
+# plt.yscale('linear')
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+# plt.xticks([1,2,3,4,5])
+# plt.yticks([10,15,20,25])
+# plt.title('Simple Line Plot', fontdict={'fontweight': "bold", 'fontsize': 16})
+# plt.show()
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# x = np.linspace(0.1, 100, 200)
+# y = x**2
+
+# plt.figure()
+# plt.plot(x, y)
+# plt.title('linear x & y (default)')
+# plt.xscale('linear'); plt.yscale('linear')
+# plt.show()
+#  plt.figure()
+# plt.plot(x, y)
+# plt.title('log-log scale')
+# plt.xscale('log'); plt.yscale('log')
+# plt.show()
+
+# import matplotlib.pyplot as plt
+# plt.plot([1,2,3],[1,4,9], label='squares')
+# plt.plot([1,2,3],[1,2,3], label='linear')
+# plt.legend()  # show legend with those labels
+# plt.show()
+
+# shorthand notation
+ 
+# import matplotlib.pyplot as plt
+# #without shorthand notation
+# plt.title('Line Plot Example', fontdict={'fontweight': 'bold', 'fontsize': 16})
+# # with shorthand notation
+# plt.plot([0,1,2,3],[0,1,4,9],'ro-', label='squares') 
+# # 'ro-' means red color, round points, solid line
+# plt.xticks([0,1,2,3])
+# plt.yticks([0,1,4,9])
+# plt.legend()
+# plt.show()
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# x =np.array([2023,2024,2025,2026])
+# y =np.array([12,15,17 ,30])
+# y1=np.array([20,30,40,12])
+
+# plt.plot(x,y, marker =".", markersize = 10, linewidth = 3)
+# plt.plot(x,y1, marker =".", markersize = 10, linewidth = 3)
+# plt.xticks(x)
+# plt.show()
+
+#grids
+ 
+# import matplotlib.pyplot as plt
+# import numpy as np
+# x =np.array([1,2,3,5])
+# y =np.array([12,15,17 ,30])
+# plt.plot(x,y)
+# plt.grid(axis="both",color ="blue",linewidth=1,linestyle="dashed")
+# plt.show()
+
+#labels
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+# x =np.array([1,2,3,5])
+# y =np.array([12,15,17 ,30])
+# plt.plot(x,y)
+# plt.title("a graph", color="red",fontsize="15",fontweight="bold",family="arial")
+# plt.xlabel("x axis",color="blue",fontsize="15",fontweight="bold",family="arial" )
+# plt.ylabel("y axis", color="blue",fontsize="15",fontweight="bold",family="arial")
+# plt.xticks(x)
+# plt.tick_params(axis="both",color = "orange")
+# plt.show()
+
+#BARCHAT
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# categories= ["grains", "fruits","vegetables","protien","dairy" ]
+# values=[4,3,5,3,2]
+# plt.bar(categories, values, color="skyblue")
+# plt.title("daily consumption")
+# plt.xlabel("food")
+# plt.ylabel("quantity")
+# plt.show()
+
+#PIE CHART
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# categ =["freshman" , "sophomores", "juniors","seniors"]
+# value= np.array([200 , 300 , 400 , 500])
+# colors=["red", "yellow" ,"skyblue","blue" ]
+# plt.pie(value , labels=categ 
+#               ,  autopct="%1.1f %%"
+#               , colors=colors
+#               , explode=[0,0,0.1,0]
+#               , shadow= True)
+# plt.title("vibecoding gooners clg")
+# plt.show()
+
+#SCATTER GRAPH= shows relation between 2 variables 
+            #  helps to find a correlation b/w (+ , - , none)
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+# x = np.array([0,1,2,3,4,5,6,7,8])
+# y =np.array([55,60,65,70,75,80,85,90,95])
+
+# plt.scatter(x,y , color="red", 
+#                    alpha=0.9,
+#                    s= 100,
+#                    label="class A ")
+# plt.xlabel("hour studied")
+# plt.ylabel("grade")
+# plt.title("test score")
+# plt.legend()
+# plt.show()
+
+#HISTORGRAM= a visual representation of the distribution of quantitative data
+#            they group values into bins(intravels) and counts how many falls in each range
+
+# import matplotlib.pyplot as plt
+# import numpy  as np
+
+# scores = np.random.normal(loc=80 , scale= 10, size=100)
+# scores =np.clip(scores,0,100)
+# plt.hist(scores, bins=9
+#          , color="skyblue",
+#          edgecolor="black")
+# plt.title("marks")
+# plt.show()
+
+#FIGURE = the entire canvas
+#AX = a single plot(subplot
+# )
+
+##python oops
+
+class nvidia:
+    raise_amount = 1.05
+    no_of_employees = 0
+        
+    def __init__(self , name , email , pay , role):
+        self.name=name 
+        self.email=email
+        self.pay=pay
+        self.role=role
+        nvidia.no_of_employees +=1
+    def raise_salary(self):
+        self.pay = int(self.pay * self.raise_amount)
+        
+print(nvidia.no_of_employees)
+emp1 = nvidia("naitik" , "naiitik1526@gmail.com" , 50000 , "Software Engineer")
+emp2 = nvidia("komal" , "komal12@gmail.com" , 50000 , "Data Scientist")
+# print(emp1.__dict__)
+# print(emp2.__dict__)
+# emp1.raise_salary()
+# print(emp1.__dict__)
+# print(emp2.__dict__)
+print(nvidia.no_of_employees)
+# nvidia.raise_amount = 1.1
+# emp1.raise_salary()
+# emp2.raise_salary()
+# print(emp1.pay)
+# print(emp2.pay)
