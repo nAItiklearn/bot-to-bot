@@ -1083,17 +1083,29 @@ class nvidia:
         nvidia.no_of_employees +=1
     def raise_salary(self):
         self.pay = int(self.pay * self.raise_amount)
-        
+    @classmethod
+    def set_raise_amount(cls, amount):
+      cls.raise_amount = amount
+    @classmethod
+    def from_string(cls, emp_str):
+      name, email, pay, role = emp_str.split("-")
+      return cls(name, email, int(pay), role)
+
 print(nvidia.no_of_employees)
-emp1 = nvidia("naitik" , "naiitik1526@gmail.com" , 50000 , "Software Engineer")
-emp2 = nvidia("komal" , "komal12@gmail.com" , 50000 , "Data Scientist")
+
+emp1= "naitik-naitik@gmail.com-50000-Software Engineer"
+# emp1 = nvidia("naitik" , "naiitik1526@gmail.com" , 50000 , "Software Engineer")
+# emp2 = nvidia("komal" , "komal12@gmail.com" , 50000 , "Data Scientist")
+
+new_emp1 = nvidia.from_string(emp1)
+print(new_emp1.name , new_emp1.email , new_emp1.pay , new_emp1.role)
 # print(emp1.__dict__)
 # print(emp2.__dict__)
 # emp1.raise_salary()
 # print(emp1.__dict__)
 # print(emp2.__dict__)
-print(nvidia.no_of_employees)
-# nvidia.raise_amount = 1.1
+# print(nvidia.no_of_employees)
+# nvidia.set_raise_amount(1.1)
 # emp1.raise_salary()
 # emp2.raise_salary()
 # print(emp1.pay)
