@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> forms in html</title>
+
+    </head>
+    <body>
+
+        <form action="/frontend/1st.html" method="POST" encryptype="multipart/form-data">
+            <label for="name">Name:</label><br>
+            <input type ="text" id ="name" placeholder="enter your name" minimum length="3" maxlength="20" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type ="email" id ="email" placeholder="enter your email" required><br><br>
+            <label for ="password">Password:</label><br>
+            <input type ="password" id ="password" placeholder="enter your password "minimum length="6" maxlength="20" required><br><br>
+            <label for="bday">Birthday:</label><br>
+            <input type ="date" id ="bday" name="bday" required><br><br>
+            
+            <label for="mr.">mr.</label>
+            <input type ="radio" id="mr." name="gender" value="mr.">
+            <label for="mrs.">mrs.</label>
+            <input type ="radio" id="mrs." name="gender" value="mrs.">
+            <label for="miss">miss</label>
+            <input type ="radio" id="miss" name="gender" value="miss">
+            <label for="payment"payment method:</label>
+            <select name="payment" id="payment">
+                <option value="credit card">credit card</option>
+                <option value="paypal">paypal</option>
+                <option value="bank transfer">bank transfer</option>
+            </select><br><br>
+            <label for="is the form good?">is the form good?:</label>
+            <input type="checkbox" id="is the form good?" name="is the form good?" value="yes"><br><br>
+            <label for="comment" >comment:</label><br>
+                <textarea name="comment" id="comment" rows="4" cols="50" placeholder="enter your comment"></textarea><br><br>   
+            <label  for="file">upload your file:</label><br>
+            <input type="file" name="file" id="file" accept="image/*"><br><br>
+
+
+
+
+            <input type = "reset" value="Reset"><br>
+            <input type ="submit" value="Submit">
+        </form>
+    </body>
+</html>
