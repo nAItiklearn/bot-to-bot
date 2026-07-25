@@ -1,49 +1,48 @@
-# My Python Learning Journey 🐍
+# Learning Repository 📚
 
-Hey there! This is my collection of Python practice codes from when I was learning the basics around Diwali 2025.
+This repository is a personal learning space where I practice Python, HTML, and basic web development concepts. It is completely open source, and I’m happy for others to explore, learn from it, or use it as a reference.
 
-## About This Repo
+## What this repo contains
 
-So basically, I learned Python from **Apna College's** YouTube course during my Diwali break. These are all the small codes and practice problems I did while following along. Nothing fancy, just pure beginner stuff, but it helped me understand the concepts properly.
+This folder includes:
+- Python practice files and beginner exercises
+- HTML files for learning structure, forms, tables, lists, and basic page layout
+- CSS examples for styling web pages
+- A few extra learning files and resources
 
-I've kept most of the code as comments in one file because that's how I practiced - just commenting out the previous code and moving to the next topic. It's a bit messy but it shows the real learning process lol.
+## Main folders
 
-## What's Covered
+- backend/ - Python practice files and small experiments
+- frontend/ - HTML and CSS practice files
+- images/ - image assets used in the frontend practice
+- pokemon.csv - sample data file used for practice
 
-The code covers pretty much all the Python basics:
-- **Basic Operations** - arithmetic, input/output, data types
-- **Strings** - slicing, methods, manipulation  
-- **Conditionals** - if-else statements, comparisons
-- **Lists & Tuples** - arrays, indexing, methods
-- **Dictionaries & Sets** - key-value pairs, set operations
-- **Loops** - while loops, for loops, range()
-- **Functions** - defining functions, recursion
-- **File I/O** - reading and writing files
-- **OOP Basics** - classes, objects, inheritance
-- **Mini Projects** - small fun projects like number guessing game, password generator
+## What I’ve learned here
 
-## NOW IM LEARNING ABOUT LIBRARIES  OF PYTHON SO ILL UPDATE IT EVERYTIME I DO ONE
-- **added Numpy** - slicing ,arithmetic ,broadcasting, aggregate functions, filtering 
--**added Pandas** -
-Series 1️⃣
-DataFrames 🔢
-Importing 📥
-Selection 🎯
-Filtering 🔍
-Aggregation ➕
-Data cleaning 🧹
+The Python part includes topics like:
+- Variables and basic operations
+- Strings and string methods
+- Conditionals and loops
+- Lists, tuples, sets, and dictionaries
+- Functions and basic OOP concepts
+- Small beginner projects and experiments
 
-## My Thoughts on the Course
+The HTML part includes practice with:
+- Basic page structure
+- Headings, paragraphs, and text formatting
+- Lists, tables, and forms
+- Divs, spans, and simple layout concepts
+- Basic styling with CSS
 
-Honestly, if you don't know anything about Python, Apna College's course is pretty solid. It's in Hindi/English mix which makes it easier to understand, and they explain things in a simple way. Perfect for absolute beginners like I was.
+## Why I made this public
 
-The course doesn't go super deep into advanced stuff, but it gives you a strong foundation to build on. After this, you can easily move to more complex topics.
+This repository is part of my learning journey, and I do not mind if others see it. It is meant to be simple, honest, and helpful for beginners who want to see how a beginner learns step by step.
 
-## How to Use This
+## How to use it
 
-Just open the main file and uncomment whatever topic you want to run. Each section is labeled so you can find what you're looking for.
+You can open the files directly and explore the code. If you are learning Python or web development, feel free to use this repository as a reference.
 
-Feel free to use this if you're learning Python too! We all start somewhere 😄
+## Note
 
----
+This is not a polished project. It is a beginner-friendly collection of practice work, and that is exactly why it exists.
 
