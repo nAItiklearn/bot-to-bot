@@ -44,5 +44,4 @@ You can open the files directly and explore the code. If you are learning Python
 
 ## Note
 
-This is not a polished project. It is a beginner-friendly collection of practice work, and that is exactly why it exists.
-
+This is not a polished project. It is a beginner-friendly collection of practice work, and that is exactly why it exists
